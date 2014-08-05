@@ -1,7 +1,10 @@
 package com.example.xe11.alarmclock;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -10,7 +13,7 @@ import static android.widget.TextView.OnEditorActionListener;
 /**
  * Created by xe11 on 05.08.2014.
  */
-public class InputHoursListener implements View.OnKeyListener{
+public class InputHoursListener implements TextWatcher{
     private EditText editText = null;
     private int countKey = 0;
 
@@ -19,34 +22,27 @@ public class InputHoursListener implements View.OnKeyListener{
         this.editText = text;
     }
 
-    public boolean isNumeric() {
-        boolean validate = false;
-        String editString = editText.getText().toString();
-        validate = editString.matches("^[0-9]+$");
 
-        return validate;
-    }
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-    public boolean isValidate() {
-        boolean validate = false;
-        if(Integer.parseInt(editText.getText().toString()) < 24)
-            validate = true;
-
-        return validate;
     }
 
     @Override
-    public boolean onKey(View v, int keyCode, KeyEvent event) {
-        boolean validate = false;
-        if(event.getAction() == KeyEvent.ACTION_DOWN) {
-            if(!isNumeric()) {
-                return false;
-            }
-            if(isValidate()) {
-                validate = true;
-            }
-        }
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-        return validate;
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        int hours = 0;
+        if(s.length() != 0)
+            hours = Integer.parseInt(s.toString());
+        else
+            return;
+
+        if(hours < 0 || hours >= 24 ){
+            editText.setText("00");
+        }
     }
 }

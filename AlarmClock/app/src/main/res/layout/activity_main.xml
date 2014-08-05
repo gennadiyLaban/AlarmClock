@@ -30,7 +30,9 @@
         android:layout_alignTop="@+id/editText2"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:inputType="number" />
+        android:inputType="number"
+        android:numeric="integer"
+        android:maxLength="2"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -42,7 +44,10 @@
         android:layout_marginTop="39dp"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_alignStart="@+id/textView"
+        android:longClickable="true"
+        android:numeric="integer"
+        android:maxLength="2"/>
 
     <CheckBox
         android:layout_width="wrap_content"

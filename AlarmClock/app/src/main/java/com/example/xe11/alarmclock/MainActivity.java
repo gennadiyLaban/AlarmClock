@@ -15,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         EditText editText = (EditText)findViewById(R.id.editText2);
-        editText.setOnKeyListener(new InputHoursListener(editText));
+        editText.addTextChangedListener(new InputHoursListener(editText));
     }
 
 
