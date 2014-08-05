@@ -24,18 +24,18 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="time"
         android:ems="10"
         android:id="@+id/editText"
         android:textSize="5dp"
         android:layout_alignTop="@+id/editText2"
         android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"/>
+        android:layout_alignEnd="@+id/textView"
+        android:inputType="number" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="time"
+        android:inputType="number"
         android:ems="10"
         android:id="@+id/editText2"
         android:textSize="5dp"
