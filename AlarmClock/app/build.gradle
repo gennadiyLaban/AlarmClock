@@ -4,7 +4,7 @@ android {
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
     defaultConfig {
-        applicationId 'com.example.xe11.alarmclock'
+        applicationId 'com.example.fenix.alarmclock'
         minSdkVersion 9
         targetSdkVersion 20
         versionCode 1

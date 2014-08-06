@@ -1,4 +1,4 @@
-package com.example.xe11.alarmclock;
+package com.example.fenix.alarmclock;
 
 /**
  * Created by xe11 on 05.08.2014.

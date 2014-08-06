@@ -1,21 +1,14 @@
-package com.example.xe11.alarmclock;
+package com.example.fenix.alarmclock;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import static android.widget.TextView.OnEditorActionListener;
 
 /**
  * Created by xe11 on 05.08.2014.
  */
 public class InputHoursListener implements TextWatcher{
     private EditText editText = null;
-    private int countKey = 0;
 
 
     public InputHoursListener(EditText text) {

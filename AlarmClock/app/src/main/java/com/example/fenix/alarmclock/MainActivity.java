@@ -1,10 +1,12 @@
-package com.example.xe11.alarmclock;
+package com.example.fenix.alarmclock;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+
+import com.example.xe11.alarmclock.R;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,8 +16,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText editText = (EditText)findViewById(R.id.editText2);
-        editText.addTextChangedListener(new InputHoursListener(editText));
+        EditText editHours = (EditText)findViewById(R.id.editText2);
+        editHours.addTextChangedListener(new InputHoursListener(editHours));
+
+        EditText editMinutes = (EditText)findViewById(R.id.editText);
+        editMinutes.addTextChangedListener(new InputMinutesListener(editMinutes));
     }
 
 
