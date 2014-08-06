@@ -11,5 +11,5 @@ public class AlarmValidator implements InputValidator {
     @Override
     public boolean isConfirm(String str) {
         return false;
-    }
+    }    //TODO(alexei.laban): isValid() ?
 }

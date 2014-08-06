@@ -8,6 +8,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    <!--//TODO(alexei.laban): вынести текст в strings -->
+    <!--TODO(alexei.laban):  android:textSize="5dp" dp -> sp  -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,6 +23,20 @@
         android:layout_marginTop="54dp"
         android:textSize="30dp" />
 
+
+<!--
+TODO(alexei.laban): это вынести в отдельный layout и включить сюда через <include>  {{
+-->
+
+
+    <!--TODO(alexei.laban):  android:textSize="5dp" dp -> sp  -->
+    <!--TODO(alexei.laban): сделать общий стиль для этих EditText
+            android:textSize="5dp"
+            android:inputType="number"
+        android:numeric="integer"
+        android:maxLength="2"
+
+            -->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,6 +50,7 @@
         android:numeric="integer"
         android:maxLength="2"/>
 
+    <!--TODO(alexei.laban):  android:textSize="5dp" dp -> sp  -->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,6 +66,7 @@
         android:numeric="integer"
         android:maxLength="2"/>
 
+    <!--//TODO(alexei.laban): вынести текст в strings -->
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,4 +76,9 @@
         android:layout_alignTop="@+id/editText"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+<!--
+TODO(alexei.laban): это вынести в отдельный layout и включить сюда через <include>  }}
+-->
+
 </RelativeLayout>

@@ -16,11 +16,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText editHours = (EditText)findViewById(R.id.editText2);
-        editHours.addTextChangedListener(new InputHoursListener(editHours));
+        EditText editHours = (EditText)findViewById(R.id.editText2);        //TODO(alexei.laban): дать нормальное название
+        editHours.addTextChangedListener(new InputHoursListener(editHours));//TODO(alexei.laban): это должно быть non-static inner-class'ом
 
-        EditText editMinutes = (EditText)findViewById(R.id.editText);
-        editMinutes.addTextChangedListener(new InputMinutesListener(editMinutes));
+        EditText editMinutes = (EditText)findViewById(R.id.editText);//TODO(alexei.laban): дать нормальное название
+        editMinutes.addTextChangedListener(new InputMinutesListener(editMinutes));    //TODO(alexei.laban): это должно быть non-static inner-class'ом
     }
 
 

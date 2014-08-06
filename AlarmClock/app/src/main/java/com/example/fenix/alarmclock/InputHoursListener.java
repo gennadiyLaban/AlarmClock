@@ -34,7 +34,8 @@ public class InputHoursListener implements TextWatcher{
         else
             return;
 
-        if(hours < 0 || hours >= 24 ){
+        //TODO(alexei.laban): весь класс ничем не отличается от InputMinutesListener кроме значения =>  сделать один класс с параметром
+        if(hours < 0 || hours >= 24 /*AL FIXME: MAGIC NUMBER: если нужно число, то это или переменнная, или константа*/){
             editText.setText("00");
         }
     }
